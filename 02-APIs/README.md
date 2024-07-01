@@ -1,6 +1,6 @@
 ## APIs Estructurados de Apache Spark
 
-### Capítulo 3. APIs Estructurados de Apache Spark
+### APIs Estructurados de Apache Spark
 
 En este módulo, exploraremos las motivaciones principales detrás de agregar estructura a Apache Spark, cómo estas motivaciones llevaron a la creación de APIs de alto nivel (DataFrames y Datasets) y su unificación en Spark 2.x. También veremos el motor Spark SQL que sustenta estas APIs estructuradas de alto nivel.
 
@@ -105,6 +105,3 @@ from pyspark.sql.functions import countDistinct
 (fire_df.select("CallType").where(col("CallType").isNotNull()).agg(countDistinct("CallType").alias("DistinctCallTypes")).show())
 ```
 
-### Resumen
-
-En este capítulo, exploramos los beneficios y operaciones comunes de los APIs estructurados de Spark, incluyendo DataFrames y Datasets. También discutimos cuándo usar DataFrames, Datasets y RDDs, y examinamos el motor subyacente Spark SQL y su optimizador Catalyst. Estos conceptos sientan las bases para los próximos capítulos, donde profundizaremos en la interoperabilidad entre DataFrames, Datasets y Spark SQL.
